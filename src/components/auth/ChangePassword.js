@@ -43,10 +43,10 @@ const ChangePassword = ({ msgAlert, user }) => {
     <div className='row'>
       <div className='col-sm-10 col-md-8 mx-auto mt-5'>
         <img className='background-image' src={Background} />
-        <h3>Change Password</h3>
+        <h3 className='auth-text-1'>Change Password</h3>
         <Form onSubmit={onChangePassword}>
           <Form.Group controlId='oldPassword'>
-            <Form.Label>Old password</Form.Label>
+            <Form.Label className='auth-text-2'>Old password</Form.Label>
             <Form.Control
               required
               name='oldPassword'
@@ -57,7 +57,7 @@ const ChangePassword = ({ msgAlert, user }) => {
             />
           </Form.Group>
           <Form.Group controlId='newPassword'>
-            <Form.Label>New Password</Form.Label>
+            <Form.Label className='auth-text-2'>New Password</Form.Label>
             <Form.Control
               required
               name='newPassword'
