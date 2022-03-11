@@ -12,7 +12,7 @@ import classes from './VibeItem.module.css'
 // import FavoritesContext from '../../store/favorites-context'
 // import { AiOutlineHeart, AiFillHeart } from 'react-icons/ai'
 import { AiOutlineStar, AiFillStar, AiOutlineHeart, AiFillHeart } from 'react-icons/ai'
-import { MDBCard, MDBCardBody, MDBCardTitle, MDBCardText, MDBCardImage } from 'mdb-react-ui-kit'
+import { MDBCard, MDBCardBody, MDBCardText, MDBCardImage } from 'mdb-react-ui-kit'
 
 const VibeItem = (props) => {
   const [likes, setLikes] = useState(0)
@@ -25,8 +25,8 @@ const VibeItem = (props) => {
           // className={props.vibe.liked ? <AiFillHeart /> : <AiOutlineHeart />}
           // key={props.vibe._id}
         >
-          <div>{props.vibe.owner.username}</div>
-          <MDBCardTitle>{props.vibe.title}</MDBCardTitle>
+          <div className='vibe-username'>{props.vibe.owner.username}</div>
+          <MDBCardText>{props.vibe.title}</MDBCardText>
           <Link to={`/vibes/${props.vibe._id}`}>
             <div className='vibe-item-img'>
               <MDBCardImage src={props.vibe.img} />
@@ -58,7 +58,7 @@ const VibeItem = (props) => {
               }
               props.fetchVibes()
             }}>
-            {props.vibe.likes.length >= 1 ? <AiFillHeart /> : <AiOutlineHeart />}
+            {props.vibe.likes.length >= 1 ? <AiFillHeart className='vibes-heart' /> : <AiOutlineHeart />}
             {props.vibe.likes.length}
             {/* key={props.vibe._id} */}
           </div>
@@ -89,10 +89,10 @@ const VibeItem = (props) => {
               }
               props.fetchVibes()
             }}>
-            {props.vibe.favorited.length >= 1 ? <AiFillStar /> : <AiOutlineStar />}
+            {props.vibe.favorited.length >= 1 ? <AiFillStar className='vibes-star' /> : <AiOutlineStar />}
             {/* key={props.vibe._id} */}
           </div>
-          <MDBCardText>{props.vibe.description}</MDBCardText>
+          <MDBCardText className='vibe-username-description'><span className='vibe-username'>{props.vibe.owner.username}</span> {props.vibe.description}</MDBCardText>
           {/* <div>{props.vibe.comment}</div> */}
         </MDBCardBody>
         <div>{/* <Comment /> */}</div>

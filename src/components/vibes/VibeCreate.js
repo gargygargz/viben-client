@@ -43,7 +43,7 @@ const VibeCreate = ({ user, msgAlert }) => {
   return (
     <div className='row'>
       <div className='col-sm-10 col-md-8 mx-auto mt-5'>
-        <h3>Create Vibe</h3>
+        <h3 className='vibes-header'>Add a <span className='vibes-v'>V</span>ibe</h3>
         <VibeForm
           handleSubmit={handleSubmit}
           username={username}

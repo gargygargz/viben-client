@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom'
 import { updateLikes, updateFavorite } from '../../api/vibes'
 // import styles from './Vibes.module.css'
 import './VibeItem.css'
-import Card from '../ui/Card'
+// import Card from '../ui/Card'
 // import Comment from './Comment'
 // import Like from './Like'
 import classes from './VibeItem.module.css'
@@ -17,23 +17,24 @@ import {
   AiOutlineStar,
   AiFillStar
 } from 'react-icons/ai'
+import { MDBCard, MDBCardBody, MDBCardText, MDBCardImage } from 'mdb-react-ui-kit'
 
 const VibeItemAllUsers = (props) => {
   const [likes, setLikes] = useState(0)
   const [favorited, setFavorited] = useState(false)
 
   return (
-    <Card>
+    <MDBCard>
       <div className={classes.item}>
-        <p
+        <MDBCardBody
           // className={props.vibe.liked ? <AiFillHeart /> : <AiOutlineHeart />}
           // key={props.vibe._id}
         >
-          <div>{props.vibe.owner.username}</div>
-          <div>{props.vibe.title}</div>
+          <div className='vibe-username'>{props.vibe.owner.username}</div>
+          <MDBCardText>{props.vibe.title}</MDBCardText>
           <Link to={`/vibes/${props.vibe._id}`}>
             <div className='vibe-item-img'>
-              <img src={props.vibe.img} />
+              <MDBCardImage src={props.vibe.img} />
             </div>
           </Link>
           <div
@@ -63,7 +64,7 @@ const VibeItemAllUsers = (props) => {
               }
               props.fetchVibes()
             }}>
-            {props.vibe.likes.length >= 1 ? <AiFillHeart /> : <AiOutlineHeart />}
+            {props.vibe.likes.length >= 1 ? <AiFillHeart className='vibes-heart' /> : <AiOutlineHeart />}
             {props.vibe.likes.length}
             {/* key={props.vibe._id} */}
           </div>
@@ -92,15 +93,16 @@ const VibeItemAllUsers = (props) => {
               }
               props.fetchVibes()
             }}>
-            {props.vibe.favorited ? <AiFillStar /> : <AiOutlineStar />}
+            {props.vibe.favorited.length >= 1 ? < AiFillStar className='vibes-star' /> : <AiOutlineStar />}
             {/* key={props.vibe._id} */}
           </div>
-          <div>{props.vibe.description}</div>
+          <MDBCardText className='vibe-username-description'>
+            <span className='vibe-username'>{props.vibe.owner.username}</span> {props.vibe.description}</MDBCardText>
           {/* <div>{props.vibe.comment}</div> */}
-        </p>
+        </MDBCardBody>
         <div>{/* <Comment /> */}</div>
       </div>
-    </Card>
+    </MDBCard>
   )
 }
 export default VibeItemAllUsers

@@ -5,7 +5,7 @@ import './Home.css'
 const Home = () => (
   <div className='home-container'>
     <img className='background-image' src={Background} />
-    <h1>Your Vibe Central</h1>
+    <h1>Connect. Share. Vibe.</h1>
   </div>
 )
 

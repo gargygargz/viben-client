@@ -2,10 +2,11 @@ import React, { useState, useEffect } from 'react'
 import { Link, Navigate, useParams } from 'react-router-dom'
 import { Spinner, Button } from 'react-bootstrap'
 // import Comment from './Comment'
-import Card from '../ui/Card'
+// import Card from '../ui/Card'
 // import classes from './VibeItem.module.css'
 import './VibeItem.css'
 // import Like from './Like'
+import { MDBCard, MDBCardBody, MDBCardText, MDBCardImage } from 'mdb-react-ui-kit'
 
 import { deleteVibe, showVibe } from '../../api/vibes'
 
@@ -65,14 +66,14 @@ const Vibe = ({ user, msgAlert }) => {
   } else {
     // We have a vibe, display it!
     return (
-      <Card>
-        <div>
+      <MDBCard>
+        <MDBCardBody>
           <div className='row'>
             <div className='col-sm-10 col-md-8 mx-auto mt-5'>
-              <div>{vibe.owner.username}</div>
-              <h3>{vibe.title}</h3>
-              <div className='vibe-item-img'><img src={vibe.img} /></div>
-              <div>{vibe.description}</div>
+              <div className='vibe-username'>{vibe.owner.username}</div>
+              <MDBCardText>{vibe.title}</MDBCardText>
+              <div className='vibe-item-img'><MDBCardImage src={vibe.img} /></div>
+              <MDBCardText><span className='vibe-username'>{vibe.owner.username}</span> {vibe.description}</MDBCardText>
               {/* <div><Like /> {vibe.liked}</div> */}
               {/* <p>{vibe.comment}</p>
           <div><Comment /></div> */}
@@ -84,8 +85,8 @@ const Vibe = ({ user, msgAlert }) => {
               </Button>
             </div>
           </div>
-        </div>
-      </Card>
+        </MDBCardBody>
+      </MDBCard>
     )
   }
 }

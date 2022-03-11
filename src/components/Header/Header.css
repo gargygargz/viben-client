@@ -31,3 +31,8 @@
 .icon {
   color: white;
 }
+
+.navbar-text {
+  font-family: 'Valeria Round', sans-serif;
+  padding-right: 5px;
+}

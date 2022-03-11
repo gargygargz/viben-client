@@ -4,6 +4,7 @@ import { Navigate } from 'react-router-dom'
 import { Spinner } from 'react-bootstrap'
 import { indexFavoriteVibes } from '../../api/vibes'
 import VibeItemAllUsers from './VibeItemAllUsers'
+import { AiFillStar } from 'react-icons/ai'
 
 const FavoriteVibes = ({ user, msgAlert, props }) => {
   const [vibes, setVibes] = useState(null)
@@ -40,7 +41,7 @@ const FavoriteVibes = ({ user, msgAlert, props }) => {
   }
   // if vibe is favorited, display the vibes
   const filteredVibes = vibes.filter(vibe => {
-    return vibe.favorited
+    return vibe.favorited.length >= 1
   })
   const vibesList = filteredVibes
     .reverse()
@@ -56,7 +57,7 @@ const FavoriteVibes = ({ user, msgAlert, props }) => {
   return (
     <div className='row'>
       <div className='col-sm-10 col-md-8 mx-auto mt-5'>
-        <h3>My Favorite Vibes</h3>
+        <h3 className='vibes-header'>Fave <span className='vibes-v'>V</span>ibes <AiFillStar className='vibes-star' /></h3>
         <ul>{vibesList}</ul>
       </div>
     </div>

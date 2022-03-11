@@ -4,6 +4,9 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Coming+Soon&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Train+One&display=swap');
+
+
 /* .vibe-item {
   display: flex;
   justify-content: space-between;
@@ -98,4 +101,39 @@ a:hover {
 
 .button-delete {
   background-color: #DB3EB1;
+}
+
+.vibe-username-description {
+  display: inline;
+}
+
+.vibe-username {
+  font-weight: bold;
+}
+
+.vibes-header {
+  text-align: center;
+  color: #DB3EB1;
+  text-shadow: 1x 1px black;
+  text-shadow: 2x 2px black;
+  text-shadow: 3x 3px black;
+  text-shadow: 4x 4px black;
+
+}
+
+.vibes-globe {
+  color: #41b6E6;
+}
+
+.vibes-star {
+  color: #FFD700;
+}
+
+.vibes-heart {
+  color: #C51114;
+}
+
+.vibes-v {
+  font-family: 'Train One', cursive;
+  font-weight: bold;
 }

@@ -6,7 +6,7 @@ import { changePasswordSuccess, changePasswordFailure } from '../AutoDismissAler
 
 import Form from 'react-bootstrap/Form'
 import Button from 'react-bootstrap/Button'
-import Background from '../../images/palm_leaves.jpg'
+// import Background from '../../images/palm_leaves.jpg'
 
 const ChangePassword = ({ msgAlert, user }) => {
   const [oldPassword, setOldPassword] = useState('')
@@ -42,7 +42,7 @@ const ChangePassword = ({ msgAlert, user }) => {
   return (
     <div className='row'>
       <div className='col-sm-10 col-md-8 mx-auto mt-5'>
-        <img className='background-image' src={Background} />
+        {/* <img className='background-image' src={Background} /> */}
         <h3 className='auth-text-1'>Change Password</h3>
         <Form onSubmit={onChangePassword}>
           <Form.Group controlId='oldPassword'>

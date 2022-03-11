@@ -5,6 +5,8 @@ import { Spinner } from 'react-bootstrap'
 import { indexAllVibes } from '../../api/vibes'
 // import VibeItem from './VibeItem'
 import VibeItemAllUsers from './VibeItemAllUsers'
+import { AiOutlineGlobal } from 'react-icons/ai'
+import './VibeItem.css'
 
 const VibesAllUsers = ({ user, msgAlert }) => {
   const [vibes, setVibes] = useState(null)
@@ -53,7 +55,7 @@ const VibesAllUsers = ({ user, msgAlert }) => {
   return (
     <div className='row'>
       <div className='col-sm-10 col-md-8 mx-auto mt-5'>
-        <h3>Vibes</h3>
+        <h3 className='vibes-header'><span className='vibes-v'>V</span>ibes Around the Globe <AiOutlineGlobal className='vibes-globe' /></h3>
         <ul>{vibesList}</ul>
       </div>
     </div>
