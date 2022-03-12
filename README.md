@@ -6,8 +6,8 @@ Connect. Share. Vibe. I created this app because I love to adventure and love to
 
 To view the live application, follow the 'deployed client' link below, and Sign Up to create an account or Sign In with the following credentials:
 
-Email: test@test.com
-Password: test
+- Email: test@test.com
+- Password: test
 
 ### Setup Steps on Local Device
 

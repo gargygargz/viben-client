@@ -7,10 +7,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Train+One&display=swap');
 
 .vibe-item-img {
-  max-width: 40rem;
+  /* max-width: 40rem; */
   height: 20rem;
   object-fit: contain;
   overflow: auto;
+  display: flex;
+  justify-content: center;
 }
 
 .button-update {
@@ -104,4 +106,7 @@
 
 .vibe-card {
   margin-bottom: 40px;
+  display: flex;
+  justify-content: center;
+  /* max-width: 480px; */
 }
