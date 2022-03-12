@@ -53,7 +53,7 @@ const VibesAllUsers = ({ user, msgAlert }) => {
   return (
     <div className='row'>
       <div className='col-sm-10 col-md-8 mx-auto mt-5'>
-        <h3 className='vibes-header'><span className='vibes-v'>V</span>ibes Around the Globe <AiOutlineGlobal className='vibes-globe' /></h3>
+        <h3 className='vibes-header'>Global <span className='vibes-v'>V</span>ibes <AiOutlineGlobal className='vibes-globe' /></h3>
         <ul>{vibesList}</ul>
       </div>
     </div>

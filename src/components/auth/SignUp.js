@@ -43,61 +43,63 @@ const SignUp = ({ msgAlert, setUser }) => {
   }
 
   if (shouldNavigate) {
-    return <Navigate to='/' />
+    return <Navigate to='/vibes/all' />
   }
 
   return (
-    <div className='row'>
-      <div className='col-sm-10 col-md-8 mx-auto mt-5'>
-        <img className='background-image' src={Background} />
-        <h3 className='auth-text-1'>Sign Up</h3>
-        <Form onSubmit={onSignUp}>
-          <Form.Group controlId='email'>
-            <Form.Label className='auth-text-2'>Email address</Form.Label>
-            <Form.Control
-              required
-              type='email'
-              name='email'
-              value={email}
-              placeholder='Enter email'
-              onChange={event => setEmail(event.target.value)}
-            />
-          </Form.Group>
-          <Form.Group controlId='username'>
-            <Form.Label className='auth-text-2'>Username</Form.Label>
-            <Form.Control
-              required
-              type='username'
-              name='username'
-              value={username}
-              placeholder='Create username'
-              onChange={event => setUsername(event.target.value)}
-            />
-          </Form.Group>
-          <Form.Group controlId='password'>
-            <Form.Label className='auth-text-2'>Password</Form.Label>
-            <Form.Control
-              required
-              name='password'
-              value={password}
-              type='password'
-              placeholder='Password'
-              onChange={event => setPassword(event.target.value)}
-            />
-          </Form.Group>
-          <Form.Group controlId='passwordConfirmation'>
-            <Form.Label className='auth-text-2'>Password Confirmation</Form.Label>
-            <Form.Control
-              required
-              name='passwordConfirmation'
-              value={passwordConfirmation}
-              type='password'
-              placeholder='Confirm Password'
-              onChange={event => setPasswordConfirmation(event.target.value)}
-            />
-          </Form.Group>
-          <Button className='mt-2' variant='primary' type='submit'>Submit</Button>
-        </Form>
+    <div className='signup-container'>
+      <div className='row'>
+        <div className='col-sm-10 col-md-8 mx-auto mt-5'>
+          <img className='background-image' src={Background} alt='palm leaves' />
+          <h3 className='auth-text-1'>Sign Up</h3>
+          <Form onSubmit={onSignUp}>
+            <Form.Group controlId='email'>
+              <Form.Label className='auth-text-2'>Email address</Form.Label>
+              <Form.Control
+                required
+                type='email'
+                name='email'
+                value={email}
+                placeholder='Enter email'
+                onChange={event => setEmail(event.target.value)}
+              />
+            </Form.Group>
+            <Form.Group controlId='username'>
+              <Form.Label className='auth-text-2'>Username</Form.Label>
+              <Form.Control
+                required
+                type='username'
+                name='username'
+                value={username}
+                placeholder='Create username'
+                onChange={event => setUsername(event.target.value)}
+              />
+            </Form.Group>
+            <Form.Group controlId='password'>
+              <Form.Label className='auth-text-2'>Password</Form.Label>
+              <Form.Control
+                required
+                name='password'
+                value={password}
+                type='password'
+                placeholder='Password'
+                onChange={event => setPassword(event.target.value)}
+              />
+            </Form.Group>
+            <Form.Group controlId='passwordConfirmation'>
+              <Form.Label className='auth-text-2'>Password Confirmation</Form.Label>
+              <Form.Control
+                required
+                name='passwordConfirmation'
+                value={passwordConfirmation}
+                type='password'
+                placeholder='Confirm Password'
+                onChange={event => setPasswordConfirmation(event.target.value)}
+              />
+            </Form.Group>
+            <Button className='mt-2' variant='primary' type='submit'>Submit</Button>
+          </Form>
+        </div>
       </div>
     </div>
   )

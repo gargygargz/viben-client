@@ -3,6 +3,7 @@ import { Navigate } from 'react-router-dom'
 import VibeForm from './VibeForm'
 import { createVibe } from '../../api/vibes'
 import './Vibes.css'
+import Palm from '../../images/palm_trees_vertical.jpg'
 
 const VibeCreate = ({ user, msgAlert }) => {
   const [img, setImg] = useState('')
@@ -40,20 +41,23 @@ const VibeCreate = ({ user, msgAlert }) => {
     return <Navigate to={`/vibes/${createdId}`} />
   }
   return (
-    <div className='row'>
-      <div className='col-sm-10 col-md-8 mx-auto mt-5'>
-        <h3 className='vibes-header'>Add a <span className='vibes-v'>V</span>ibe</h3>
-        <VibeForm
-          handleSubmit={handleSubmit}
-          username={username}
-          img={img}
-          title={title}
-          description={description}
-          setUsername={setUsername}
-          setImg={setImg}
-          setTitle={setTitle}
-          setDescription={setDescription}
-        />
+    <div className='vibe-create'>
+      <div className='row'>
+        <div className='col-sm-10 col-md-8 mx-auto mt-5'>
+          <img className='background-image2' src={Palm} alt='palm tree' />
+          <h3 className='title-text'>Add a <span className='vibes-v'>V</span>ibe</h3>
+          <VibeForm
+            handleSubmit={handleSubmit}
+            username={username}
+            img={img}
+            title={title}
+            description={description}
+            setUsername={setUsername}
+            setImg={setImg}
+            setTitle={setTitle}
+            setDescription={setDescription}
+          />
+        </div>
       </div>
     </div>
   )

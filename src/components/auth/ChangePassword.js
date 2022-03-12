@@ -6,7 +6,7 @@ import { changePasswordSuccess, changePasswordFailure } from '../AutoDismissAler
 
 import Form from 'react-bootstrap/Form'
 import Button from 'react-bootstrap/Button'
-// import Background from '../../images/palm_leaves.jpg'
+import Palm from '../../images/palm_trees_vertical.jpg'
 import './Auth.css'
 
 const ChangePassword = ({ msgAlert, user }) => {
@@ -41,36 +41,38 @@ const ChangePassword = ({ msgAlert, user }) => {
   }
 
   return (
-    <div className='row'>
-      <div className='col-sm-10 col-md-8 mx-auto mt-5'>
-        {/* <img className='background-image' src={Background} /> */}
-        <h3 className='auth-text-1'>Change Password</h3>
-        <Form onSubmit={onChangePassword}>
-          <Form.Group controlId='oldPassword'>
-            <Form.Label className='auth-text-2'>Old password</Form.Label>
-            <Form.Control
-              required
-              name='oldPassword'
-              value={oldPassword}
-              type='password'
-              placeholder='Old Password'
-              onChange={event => setOldPassword(event.target.value)}
-            />
-          </Form.Group>
-          <Form.Group controlId='newPassword'>
-            <Form.Label className='auth-text-2'>New Password</Form.Label>
-            <Form.Control
-              required
-              name='newPassword'
-              value={newPassword}
-              type='password'
-              placeholder='New Password'
-              onChange={event => setNewPassword(event.target.value)
-              }
-            />
-          </Form.Group>
-          <Button className='mt-2' variant='primary' type='submit'>Submit</Button>
-        </Form>
+    <div className='changepw-container'>
+      <div className='row'>
+        <div className='col-sm-10 col-md-8 mx-auto mt-5'>
+          <img className='background-image2' src={Palm} alt='palm tree' />
+          <h3 className='title-text'>Change Password</h3>
+          <Form onSubmit={onChangePassword}>
+            <Form.Group controlId='oldPassword'>
+              <Form.Label>Old password</Form.Label>
+              <Form.Control
+                required
+                name='oldPassword'
+                value={oldPassword}
+                type='password'
+                placeholder='Old Password'
+                onChange={event => setOldPassword(event.target.value)}
+              />
+            </Form.Group>
+            <Form.Group controlId='newPassword'>
+              <Form.Label>New Password</Form.Label>
+              <Form.Control
+                required
+                name='newPassword'
+                value={newPassword}
+                type='password'
+                placeholder='New Password'
+                onChange={event => setNewPassword(event.target.value)
+                }
+              />
+            </Form.Group>
+            <Button className='mt-2' variant='primary' type='submit'>Submit</Button>
+          </Form>
+        </div>
       </div>
     </div>
   )

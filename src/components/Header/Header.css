@@ -32,6 +32,14 @@
   .nav-link-plus-icon {
     padding-left: 0px;
     padding-right: 0px;
+    margin-top: 0px;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .nav-link-star-icon {
+    padding-left: 0px;
+    padding-right: 0px;
     margin-top: 12px;
   }
 }

@@ -31,7 +31,7 @@ const VibeForm = ({
     <Form.Group controlId='title'>
       <Form.Label>Title</Form.Label>
       <Form.Control
-        placeholder='A Mexico vibe'
+        placeholder='e.g. The boysenberry blues'
         name='title'
         value={title}
         onChange={(event) => setTitle(event.target.value)}
@@ -41,7 +41,7 @@ const VibeForm = ({
     <Form.Group controlId='description'>
       <Form.Label>Description</Form.Label>
       <Form.Control
-        placeholder='e.g. This place was dope dope dope'
+        placeholder='e.g. The dopest, vibiest IHOP ever'
         name='description'
         value={description}
         onChange={(event) => setDescription(event.target.value)}

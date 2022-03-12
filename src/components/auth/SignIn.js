@@ -43,36 +43,38 @@ const SignIn = ({ msgAlert, setUser }) => {
   }
 
   return (
-    <div className='row'>
-      <div className='col-sm-10 col-md-8 mx-auto mt-5'>
-        <img className='background-image' src={Background} />
-        <h3 className='auth-text-1'>Sign In</h3>
-        <Form onSubmit={onSignIn}>
-          <Form.Group controlId='email'>
-            <Form.Label className='auth-text-2'>Email address</Form.Label>
-            <Form.Control
-              required
-              type='email'
-              name='email'
-              value={email}
-              placeholder='Enter email'
-              onChange={event => setEmail(event.target.value)}
-            />
-          </Form.Group>
-          <Form.Group controlId='password'>
-            <Form.Label className='auth-text-2'>Password</Form.Label>
-            <Form.Control
-              required
-              name='password'
-              value={password}
-              type='password'
-              placeholder='Password'
-              onChange={event => setPassword(event.target.value)
-              }
-            />
-          </Form.Group>
-          <Button className='mt-2' variant='primary' type='submit'>Submit</Button>
-        </Form>
+    <div className='signin-container'>
+      <div className='row'>
+        <div className='col-sm-10 col-md-8 mx-auto mt-5'>
+          <img className='background-image' src={Background} alt='palm leaves' />
+          <h3 className='auth-text-1'>Sign In</h3>
+          <Form onSubmit={onSignIn}>
+            <Form.Group controlId='email'>
+              <Form.Label className='auth-text-2'>Email address</Form.Label>
+              <Form.Control
+                required
+                type='email'
+                name='email'
+                value={email}
+                placeholder='Enter email'
+                onChange={event => setEmail(event.target.value)}
+              />
+            </Form.Group>
+            <Form.Group controlId='password'>
+              <Form.Label className='auth-text-2'>Password</Form.Label>
+              <Form.Control
+                required
+                name='password'
+                value={password}
+                type='password'
+                placeholder='Password'
+                onChange={event => setPassword(event.target.value)
+                }
+              />
+            </Form.Group>
+            <Button className='mt-2' variant='primary' type='submit'>Submit</Button>
+          </Form>
+        </div>
       </div>
     </div>
   )

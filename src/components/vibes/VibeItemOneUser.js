@@ -10,7 +10,7 @@ const VibeItemOneUser = (props) => {
   const [favorited, setFavorited] = useState(false)
 
   return (
-    <MDBCard>
+    <MDBCard className='vibe-card'>
       <div>
         <MDBCardBody>
           <div className='vibe-username'>{props.vibe.owner.username}</div>

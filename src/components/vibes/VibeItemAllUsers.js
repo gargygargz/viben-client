@@ -17,7 +17,7 @@ const VibeItemAllUsers = (props) => {
   const [likes, setLikes] = useState(0)
 
   return (
-    <MDBCard>
+    <MDBCard className='vibe-card'>
       <div>
         <MDBCardBody>
           <div className='vibe-username'>{props.vibe.owner.username}</div>

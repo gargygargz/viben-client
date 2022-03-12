@@ -39,6 +39,7 @@
   justify-content: center;
   align-items: center;
   font-family: 'Neonderthaw', cursive;
+  text-align: center;
   background: rgba(0, 0, 0, 0.7);
   background-size: cover;
 }
@@ -71,4 +72,18 @@
   .home-container > p {
     font-size: 30px;
   }
+}
+
+
+.home-slogan {
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 60%;
+  height: 60%;
+  margin-top: -120px;
 }
