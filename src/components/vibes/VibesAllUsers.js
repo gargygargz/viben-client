@@ -1,12 +1,10 @@
 import React, { useEffect, useState } from 'react'
 import { Navigate } from 'react-router-dom'
-
 import { Spinner } from 'react-bootstrap'
 import { indexAllVibes } from '../../api/vibes'
-// import VibeItem from './VibeItem'
 import VibeItemAllUsers from './VibeItemAllUsers'
 import { AiOutlineGlobal } from 'react-icons/ai'
-import './VibeItem.css'
+import './Vibes.css'
 
 const VibesAllUsers = ({ user, msgAlert }) => {
   const [vibes, setVibes] = useState(null)

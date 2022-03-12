@@ -8,15 +8,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Train+One&display=swap');
 
 .navbar-styling {
-  /* background-color: #0BD3D3; */
-  /* font-family: 'Varela Round', sans-serif; */
   font-family: 'Train One', cursive;
   color: #DB3EB1;
 }
 
-.nav-link-vibes {
-  /* background-color: #0BD3D3; */
-  /* font-family: 'Varela Round', sans-serif; */
+.nav-link-v {
   font-family: 'Train One', cursive;
   color: #db3eb1;
   margin-top: 8px;
@@ -24,12 +20,28 @@
   padding-right: 10px;
 }
 
+@media only screen and (max-width: 767px) {
+  .nav-link-v {
+    padding-left: 2px;
+    padding-right: 0px;
+    margin-top: 8px; 
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .nav-link-plus-icon {
+    padding-left: 0px;
+    padding-right: 0px;
+    margin-top: 12px;
+  }
+}
+
 .nav-link {
   font-family: 'Valeria Round', sans-serif;
 }
 
-.icon {
-  color: white;
+.nav-link-plus-icon {
+  color: #0BD3D3;
 }
 
 .navbar-text {

@@ -1,13 +1,8 @@
 import React, { useState, useEffect } from 'react'
 import { Link, Navigate, useParams } from 'react-router-dom'
 import { Spinner, Button } from 'react-bootstrap'
-// import Comment from './Comment'
-// import Card from '../ui/Card'
-// import classes from './VibeItem.module.css'
-import './VibeItem.css'
-// import Like from './Like'
+import './Vibes.css'
 import { MDBCard, MDBCardBody, MDBCardText, MDBCardImage } from 'mdb-react-ui-kit'
-
 import { deleteVibe, showVibe } from '../../api/vibes'
 
 const Vibe = ({ user, msgAlert }) => {
@@ -74,9 +69,6 @@ const Vibe = ({ user, msgAlert }) => {
               <MDBCardText>{vibe.title}</MDBCardText>
               <div className='vibe-item-img'><MDBCardImage src={vibe.img} /></div>
               <MDBCardText><span className='vibe-username'>{vibe.owner.username}</span> {vibe.description}</MDBCardText>
-              {/* <div><Like /> {vibe.liked}</div> */}
-              {/* <p>{vibe.comment}</p>
-          <div><Comment /></div> */}
               <Link to={`/vibes/${id}/edit`}>
                 <Button className='button-update' variant='primary' type='submit'>Update Vibe
                 </Button>

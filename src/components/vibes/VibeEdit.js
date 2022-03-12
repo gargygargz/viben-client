@@ -1,14 +1,13 @@
 import React, { useState, useEffect } from 'react'
 import { Navigate, useParams } from 'react-router-dom'
-
 import VibeForm from './VibeForm'
 import { showVibe, updateVibe } from '../../api/vibes'
+import './Vibes.css'
 
 const VibeEdit = ({ user, msgAlert }) => {
   const [img, setImg] = useState('')
   const [title, setTitle] = useState('')
   const [description, setDescription] = useState('')
-  // const [liked, setLiked] = useState(false)
   const [updated, setUpdated] = useState(false)
   const { id } = useParams()
 
@@ -28,7 +27,6 @@ const VibeEdit = ({ user, msgAlert }) => {
         setImg(res.data.vibe.img)
         setTitle(res.data.vibe.title)
         setDescription(res.data.vibe.description)
-        // setLiked(res.data.vibe.liked)
       } catch (error) {
         msgAlert({
           heading: 'Failed to load vibe',
@@ -68,7 +66,7 @@ const VibeEdit = ({ user, msgAlert }) => {
   return (
     <div className='row'>
       <div className='col-sm-10 col-md-8 mx-auto mt-5'>
-        <h3>Edit Vibe</h3>
+        <h3 className='vibes-header'>Edit Vibe</h3>
         <VibeForm
           handleSubmit={handleSubmit}
           img={img}

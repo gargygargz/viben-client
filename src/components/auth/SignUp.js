@@ -7,6 +7,7 @@ import { signUpSuccess, signUpFailure } from '../AutoDismissAlert/messages'
 import Form from 'react-bootstrap/Form'
 import Button from 'react-bootstrap/Button'
 import Background from '../../images/palm_leaves.jpg'
+import './Auth.css'
 
 const SignUp = ({ msgAlert, setUser }) => {
   const [email, setEmail] = useState('')

@@ -65,7 +65,7 @@ export const updateVibe = (id, img, title, description, user) => {
 //   )
 // }
 
-export const updateLikes = (id, img, title, description, likes, user) => {
+export const updateLike = (id, img, title, description, likes, user) => {
   return axios.patch(
     `${apiUrl}/vibes/likes/${id}`,
     { vibe: { img, title, description, likes } },
@@ -79,7 +79,7 @@ export const updateLikes = (id, img, title, description, likes, user) => {
 
 export const updateFavorite = (id, img, title, description, favorited, user) => {
   return axios.patch(
-    `${apiUrl}/vibes/favorites/${id}`,
+    `${apiUrl}/vibes/favorited/${id}`,
     { vibe: { img, title, description, favorited } },
     {
       headers: {

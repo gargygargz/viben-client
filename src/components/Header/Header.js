@@ -9,8 +9,8 @@ import { AiOutlineHome, AiOutlinePlusCircle, AiOutlineStar, AiOutlineUser, AiOut
 const authenticatedOptions = (
   <>
     <NavLink to='/vibes/all' className='nav-link'><AiOutlineHome /></NavLink>
-    <NavLink to='/vibes' className='nav-link-vibes'>V</NavLink>
-    <NavLink to='/vibes/create' className='nav-link'><AiOutlinePlusCircle className='icon' /></NavLink>
+    <NavLink to='/vibes' className='nav-link-v'>V</NavLink>
+    <NavLink to='/vibes/create' className='nav-link'><AiOutlinePlusCircle className='nav-link-plus-icon' /></NavLink>
     <NavLink to='/vibes/favorites' className='nav-link'><AiOutlineStar /></NavLink>
     <NavLink to='/change-password' className='nav-link'><AiOutlineUser /></NavLink>
     <NavLink to='/sign-out' className='nav-link'><AiOutlineExport /></NavLink>

@@ -11,11 +11,11 @@ import SignOut from './components/auth/SignOut'
 import ChangePassword from './components/auth/ChangePassword'
 
 import Home from './components/vibes/Home'
-import Vibes from './components/vibes/Vibes'
+import VibesOneUser from './components/vibes/VibesOneUser'
 import Vibe from './components/vibes/Vibe'
 import VibeCreate from './components/vibes/VibeCreate'
 import VibeEdit from './components/vibes/VibeEdit'
-import FavoriteVibes from './components/vibes/FavoriteVibes'
+import VibeFavorites from './components/vibes/VibeFavorites'
 import VibesAllUsers from './components/vibes/VibesAllUsers'
 
 const App = () => {
@@ -65,7 +65,7 @@ const App = () => {
 
           <Route
             path='/vibes'
-            element={<Vibes user={user} msgAlert={msgAlert} />}
+            element={<VibesOneUser user={user} msgAlert={msgAlert} />}
           />
           <Route
             path='/vibes/:id'
@@ -81,7 +81,7 @@ const App = () => {
           />
           <Route
             path='/vibes/favorites'
-            element={<FavoriteVibes msgAlert={msgAlert} user={user} />}
+            element={<VibeFavorites msgAlert={msgAlert} user={user} />}
           />
           <Route
             path='/vibes/all'

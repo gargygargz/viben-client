@@ -7,6 +7,7 @@ import { changePasswordSuccess, changePasswordFailure } from '../AutoDismissAler
 import Form from 'react-bootstrap/Form'
 import Button from 'react-bootstrap/Button'
 // import Background from '../../images/palm_leaves.jpg'
+import './Auth.css'
 
 const ChangePassword = ({ msgAlert, user }) => {
   const [oldPassword, setOldPassword] = useState('')

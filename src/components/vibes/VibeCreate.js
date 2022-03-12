@@ -1,9 +1,8 @@
 import React, { useState } from 'react'
 import { Navigate } from 'react-router-dom'
-
-// Import VibeForm:
 import VibeForm from './VibeForm'
 import { createVibe } from '../../api/vibes'
+import './Vibes.css'
 
 const VibeCreate = ({ user, msgAlert }) => {
   const [img, setImg] = useState('')
