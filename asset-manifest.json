@@ -1,21 +1,21 @@
 {
   "files": {
-    "main.css": "/viben-client/static/css/main.b4c59adc.chunk.css",
-    "main.js": "/viben-client/static/js/main.02390083.chunk.js",
-    "main.js.map": "/viben-client/static/js/main.02390083.chunk.js.map",
+    "main.css": "/viben-client/static/css/main.63528147.chunk.css",
+    "main.js": "/viben-client/static/js/main.bd8add37.chunk.js",
+    "main.js.map": "/viben-client/static/js/main.bd8add37.chunk.js.map",
     "runtime-main.js": "/viben-client/static/js/runtime-main.eaa138de.js",
     "runtime-main.js.map": "/viben-client/static/js/runtime-main.eaa138de.js.map",
-    "static/js/2.d5217818.chunk.js": "/viben-client/static/js/2.d5217818.chunk.js",
-    "static/js/2.d5217818.chunk.js.map": "/viben-client/static/js/2.d5217818.chunk.js.map",
+    "static/js/2.4fed65ac.chunk.js": "/viben-client/static/js/2.4fed65ac.chunk.js",
+    "static/js/2.4fed65ac.chunk.js.map": "/viben-client/static/js/2.4fed65ac.chunk.js.map",
     "index.html": "/viben-client/index.html",
-    "static/css/main.b4c59adc.chunk.css.map": "/viben-client/static/css/main.b4c59adc.chunk.css.map",
-    "static/js/2.d5217818.chunk.js.LICENSE.txt": "/viben-client/static/js/2.d5217818.chunk.js.LICENSE.txt",
+    "static/css/main.63528147.chunk.css.map": "/viben-client/static/css/main.63528147.chunk.css.map",
+    "static/js/2.4fed65ac.chunk.js.LICENSE.txt": "/viben-client/static/js/2.4fed65ac.chunk.js.LICENSE.txt",
     "static/media/palm_leaves.58d90fb5.jpg": "/viben-client/static/media/palm_leaves.58d90fb5.jpg"
   },
   "entrypoints": [
     "static/js/runtime-main.eaa138de.js",
-    "static/js/2.d5217818.chunk.js",
-    "static/css/main.b4c59adc.chunk.css",
-    "static/js/main.02390083.chunk.js"
+    "static/js/2.4fed65ac.chunk.js",
+    "static/css/main.63528147.chunk.css",
+    "static/js/main.bd8add37.chunk.js"
   ]
 }
