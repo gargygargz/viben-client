@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/viben-client/static/css/main.bc618297.chunk.css",
+    "main.css": "/viben-client/static/css/main.8316d677.chunk.css",
     "main.js": "/viben-client/static/js/main.a2604428.chunk.js",
     "main.js.map": "/viben-client/static/js/main.a2604428.chunk.js.map",
     "runtime-main.js": "/viben-client/static/js/runtime-main.eaa138de.js",
@@ -8,7 +8,7 @@
     "static/js/2.4fed65ac.chunk.js": "/viben-client/static/js/2.4fed65ac.chunk.js",
     "static/js/2.4fed65ac.chunk.js.map": "/viben-client/static/js/2.4fed65ac.chunk.js.map",
     "index.html": "/viben-client/index.html",
-    "static/css/main.bc618297.chunk.css.map": "/viben-client/static/css/main.bc618297.chunk.css.map",
+    "static/css/main.8316d677.chunk.css.map": "/viben-client/static/css/main.8316d677.chunk.css.map",
     "static/js/2.4fed65ac.chunk.js.LICENSE.txt": "/viben-client/static/js/2.4fed65ac.chunk.js.LICENSE.txt",
     "static/media/home_slogan.75b1b415.png": "/viben-client/static/media/home_slogan.75b1b415.png",
     "static/media/palm_leaves.58d90fb5.jpg": "/viben-client/static/media/palm_leaves.58d90fb5.jpg",
@@ -17,7 +17,7 @@
   "entrypoints": [
     "static/js/runtime-main.eaa138de.js",
     "static/js/2.4fed65ac.chunk.js",
-    "static/css/main.bc618297.chunk.css",
+    "static/css/main.8316d677.chunk.css",
     "static/js/main.a2604428.chunk.js"
   ]
 }
